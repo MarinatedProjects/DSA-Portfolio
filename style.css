@@ -19,6 +19,7 @@ body {
   padding-bottom: 50px;
 }
 
+/* Layout Columns */
 .column {
   display: flex;
   flex-direction: column;
@@ -45,6 +46,7 @@ body {
   padding: 2px;
 }
 
+/* Title Bar */
 .title-bar {
   background: linear-gradient(90deg, #000080, #1084d0);
   padding: 3px 2px 3px 4px;
@@ -67,6 +69,7 @@ body {
   gap: 2px;
 }
 
+/* Title Bar Buttons */
 .btn {
   background-color: #c0c0c0;
   border-top: 1px solid #fff;
@@ -94,6 +97,7 @@ body {
   box-shadow: inset 1px 1px #808080;
 }
 
+/* Window Body Content */
 .window-body {
   padding: 12px;
 }
@@ -167,6 +171,7 @@ a {
 }
 
 a:hover {
+  /* Optional: add hover effect */
   color: #000080;
 }
 
@@ -175,6 +180,17 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   margin-top: 12px;
+}
+
+.photo-gallery a {
+  display: block;
+  text-decoration: none;
+  border: none;
+}
+
+.photo-gallery a:hover img {
+  opacity: 0.85;
+  cursor: pointer;
 }
 
 .photo-gallery img {
@@ -186,6 +202,7 @@ a:hover {
   border-left: 2px solid #808080;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
+  transition: opacity 0.2s ease;
 }
 
 .taskbar {
