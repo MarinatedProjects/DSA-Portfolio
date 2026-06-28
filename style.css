@@ -1,0 +1,304 @@
+/* ======================================
+   Windows 95 Portfolio - Stylesheet
+   ====================================== */
+
+body {
+  background-color: #008080;
+  font-family: 'MS Sans Serif', Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  color: #000;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Layout Columns */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.left-column {
+  max-width: 600px;
+}
+
+.right-column {
+  max-width: 400px;
+}
+
+/* ======================================
+   Window Styling (Classic Win95)
+   ====================================== */
+
+.window {
+  background-color: #c0c0c0;
+  width: 100%;
+  border-top: 2px solid #dfdfdf;
+  border-left: 2px solid #dfdfdf;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  box-shadow: inset -1px -1px #808080, inset 1px 1px #fff;
+  padding: 2px;
+}
+
+/* Title Bar */
+.title-bar {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  padding: 3px 2px 3px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.title-bar-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.title-bar-controls {
+  display: flex;
+  gap: 2px;
+}
+
+/* Title Bar Buttons */
+.btn {
+  background-color: #c0c0c0;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  box-shadow: inset -1px -1px #808080, inset 1px 1px #dfdfdf;
+  width: 16px;
+  height: 14px;
+  font-family: 'MS Sans Serif', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #000;
+}
+
+.btn:active {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  box-shadow: inset 1px 1px #808080;
+}
+
+/* Window Body Content */
+.window-body {
+  padding: 12px;
+}
+
+/* ======================================
+   Form Elements
+   ====================================== */
+
+fieldset {
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 12px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+legend {
+  padding: 0 4px;
+  color: #000;
+}
+
+/* ======================================
+   Profile & Avatar
+   ====================================== */
+
+.profile-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar-frame {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ======================================
+   Typography
+   ====================================== */
+
+h1, h2, h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+/* ======================================
+   Links
+   ====================================== */
+
+a {
+  color: #0000ee;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  /* Optional: add hover effect */
+  color: #000080;
+}
+
+/* ======================================
+   Photo Gallery
+   ====================================== */
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* ======================================
+   Taskbar (Bottom Navigation)
+   ====================================== */
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background-color: #c0c0c0;
+  border-top: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  padding: 2px 4px;
+  z-index: 100;
+}
+
+.start-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #c0c0c0;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  box-shadow: inset -1px -1px #808080;
+  padding: 2px 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.start-btn:active {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  box-shadow: inset 1px 1px #808080;
+}
+
+.start-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  width: 12px;
+  height: 12px;
+}
+
+.start-logo div:nth-child(1) {
+  background: #f03020;
+}
+
+.start-logo div:nth-child(2) {
+  background: #108030;
+}
+
+.start-logo div:nth-child(3) {
+  background: #0090e0;
+}
+
+.start-logo div:nth-child(4) {
+  background: #ffb000;
+}
+
+/* ======================================
+   Responsive Design
+   ====================================== */
+
+@media (min-width: 1024px) {
+  body {
+    flex-wrap: nowrap;
+  }
+
+  .column {
+    width: auto;
+  }
+
+  .left-column {
+    flex: 1;
+  }
+
+  .right-column {
+    flex: 0 0 400px;
+  }
+}
